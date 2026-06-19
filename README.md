@@ -15,4 +15,4 @@ This is my longet and biggest project as a beginner, i buit theis project follow
 - CSS
 - JAVASCRIPT
 ## Contributors
--[Grace](
+-[Grace](https://github.com/Temi-ay)
