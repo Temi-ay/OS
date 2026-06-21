@@ -1,7 +1,7 @@
 .window {
     border: 2px solid #8ab8d8;
     border-radius: 8px;
-    width: fit-content;
+    width: max-content;
     max-width: 90%;
     position: absolute;
     top: 50%;
@@ -11,6 +11,8 @@
     background: rgba(255, 255, 255, 0.92);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .windowheader {
     width: 100%;
@@ -19,7 +21,7 @@
     justify-content: space-between;
     cursor: grab;
     padding: 6px 12px;
-    background: linear-gradient(to bottom, #b8d8f0, #91bed0);
+    background:  #b8d8f0;
     border-bottom: 1px solid #739fc2;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -40,8 +42,11 @@
 .windowcontent {
     padding: 10px;
     background: rgba(255, 255, 255, 0.92);
+    width: 360px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
-.appContent {
+.windowcontent.appContent {
     display: flex;
     width: 480px;
     height: 360px;
@@ -112,6 +117,7 @@
     font-size: 13px;
     user-select: none;
 }
+
 img {
     display: block;
 }
