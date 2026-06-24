@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body style="font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+        background: url('https://th.bing.com/th/id/OIP.jtyUcLiBezx5butbUhMGIgHaKa?w=202&h=285&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3') center / cover no-repeat fixed;
+        margin: 10px;
+        padding: 10px;">
+        <div class="window" id="Welcome">
+            <div class="windowheader" id="Welcomeheader">
+                <p class="headertext">Welcome</p>
+                <p class="headertext closetext" id="welcomeclose">Close</p>
+            </div>
+            <div class="windowcontent">
+                <h1>Welcome to my OS</h1>
+                <h2>Introduction</h2>
+                <p>
+                    This is my first webpage!<br>
+                    I am excited to be here learning web development.<br>
+                    I hope I can stay motivated as it progresses.
+                </p>
+                <h3>A picture I find aesthetic</h3>
+                <img
+                    style="width: 128px; height: 128px; border-radius: 50%; object-fit: cover;"
+                    src="https://th.bing.com/th/id/OIP.Xl-q_lga_XnfE746GdVJUAHaNK?w=187&h=395&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3"
+                    alt="Profile"
+                >
+                <h3>My favourite artists</h3>
+                <a href="https://www.tiktok.com/@bts_official_bighit/video/7646412054026325268?is_from_webapp=1&sender_device=pc">BTS Official</a>
+                <h3>Fun Facts About Me</h3>
+                <p>
+                    1. <strong>I am a huge fan of BTS and their music.</strong><br>
+                    2. I enjoy learning new programming languages.<br>
+                    3. I have a passion for puzzles and building things.
+                </p>
+            </div>
+        </div>
+        <div class="taskbar" id="taskbar">
+            <p class="headertext" id="welcomeopen" style="cursor: pointer;">GraceOS</p>
+            <img
+                style="width: 26px; height: 26px; border-radius: 50%; object-fit: cover;"
+                src="https://www.bing.com/th/id/OGC.32a1061e7cee66613b5233bab8ae841e?o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fi.pinimg.com%2foriginals%2fcc%2fc2%2f28%2fccc22830278109200573d5b5e1155ec3.gif&ehk=srze4zktHbkUxxy2vi3TubuzmGtZLb5LY28TuuFaVSM%3d"
+                alt="Icon"
+            >
+            <p id="timeElement"></p>
+        </div>
+        <div class="window" id="GraceApp" style="display: none;">
+            <div class="windowheader" id="GraceAppheader">
+                <p class="headertext">Favorite Things</p>
+                <p class="headertext closetext" id="GraceAppclose">Close</p>
+            </div>
+            <div class="windowcontent appContent">
+                <div class="appSidebar" id="graceSidebar"></div>
+                <div class="appDisplay" id="graceDisplay"></div>
+            </div>
+        </div>
+        <div class="window" id="MoonApp" style="display: none;">
+            <div class="windowheader" id="MoonAppheader">
+                <p class="headertext">Moon Facts</p>
+                <p class="headertext closetext" id="MoonAppclose">Close</p>
+            </div>
+            <div class="windowcontent appContent">
+                <div class="appSidebar" id="moonSidebar"></div>
+                <div class="appDisplay" id="moonDisplay"></div>
+            </div>
+        </div>
+        <div id="desktopApps" style="padding-top: 64px; padding-left: 16px; display: flex; gap: 8px;">
+            <div class="appIcon" id="GraceAppIcon" onclick="handleIconTap(this, 'GraceApp')">
+                <img src="https://th.bing.com/th/id/OIP.OxmEX9TRkB_toRfDZUuXUAHaE5?w=259&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" style="width: 64px; height: 64px; border-radius: 16px;">
+                <p class="iconLabel">Grace App</p>
+            </div>
+            <div class="appIcon" id="MoonIcon" onclick="handleIconTap(this, 'MoonApp')">
+                <img src="https://th.bing.com/th/id/OIP.ta85I-CR-DCUY6MSa0ReMAHaHa?w=174&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" style="width: 64px; height: 64px; border-radius: 16px;">
+                <p class="iconLabel">Moon Facts</p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
