@@ -1,6 +1,6 @@
 # Grace OS🥳💻 
 ## 📌Description
-This is my longet and biggest project as a beginner, i buit theis project following the guide on hack club to buid my very own web os 
+This is my biggest project as a beginner, i buit theis project following the guide on hack club to buid my very own web os 
 ## ✈️ Features
 -✅Two clickable desktop icons
 -✅A live clock on the bottom right that updates every second
